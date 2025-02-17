@@ -1,5 +1,10 @@
 {
 	"version": 2,
 	"builds": [{ "src": "index.js", "use": "@vercel/node" }],
+	"functions": {
+		"index.js": {
+			"includeFiles": ["BD4.5_kitchen_database.sqlite"]
+		}
+	},
 	"rewrites": [{ "source": "/(.*)", "destination": "index.js" }]
 }

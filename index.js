@@ -12,7 +12,7 @@ app.use(cors());
 let db;
 (async () => {
   db = await open({
-    filename: './BD4_Assignment1/database.sqlite',
+    filename: './BD4_1/database.sqlite',
     driver: sqlite3.Database,
   });
   console.log('Database connected successfully');
